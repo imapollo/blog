@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: blog
+baseurl: /blog
 url: "http://example.com" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
