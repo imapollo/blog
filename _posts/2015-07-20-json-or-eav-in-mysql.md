@@ -7,8 +7,9 @@ NoSQL Document DB like MongoDB provides flexibility without built in schema, whi
 I met a real case recently that I want the same set of DB model to be applied to different services. For sure, there're some common fields, tables can used by all the services, however, there're still something left cannot be aligned. Also, there's no guarantee  these fields would not be changed later. It means we need the same flexibility as MongoDB.
 
 Here is some solution:
-* JSON field in MySQL
-* EAV style
+
+1. JSON field in MySQL
+2. EAV style
 
 Let's take a look at them one by one.
 
@@ -46,6 +47,7 @@ EAV:
      3 ...
 
 There are also plenty of reasons you shouldn't use EAV.
+
 1. No way to define data types.
 2. No easy way for contraints.
 3. No unique index.
