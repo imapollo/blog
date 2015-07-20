@@ -12,7 +12,7 @@ theme:
 
   # Header and footer text
   header_text: >
-     <p>Hello World</p>
+     <p>get_new_skill</p>
 
   header_text_feature_image:
   footer_text: >
@@ -28,15 +28,15 @@ theme:
   flickr:
   github: "imapollo"
   google_plus:
-  instagram:
+  instagram: "imapollo"
   linkedin:  # Full URL
-  pinterest:
+  pinterest: "www.pinterest.com/imapollo"
   reddit:
   soundcloud:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: "twitter"
+  twitter:
   wordpress:
   youtube:
 
