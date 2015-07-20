@@ -24,16 +24,13 @@ EAV means Entity-Attribute-Value (also sometimes 'name-value pairs').
 
 Here is an example, normal model:
 
-{% highlight %}
 ID   Ht_cm   wt_kg   Age_yr  ... 
 1      190      82     43    ...
 2      170      60     22    ...
 3      205      90     51    ...
-{% endhighlight %}
 
 EAV:
 
-{% highlight %}
 ID    Metric   Value
  1     Ht_cm     190
  1     Wt_kg     82
@@ -47,7 +44,6 @@ ID    Metric   Value
  3     Wt_kg     90
  3     Age_yr    51
  3     ...
-{% endhighlight %}
 
 There are also plenty of reasons you shouldn't use EAV.
 1. No way to define data types.
@@ -57,7 +53,6 @@ There are also plenty of reasons you shouldn't use EAV.
 
 Compare:
 
-{% highlight sql %}
 SELECT cID.ID AS [ID], cH.Value AS [Height], cW.Value AS [Weight], cA.Value AS [Age]
 FROM (SELECT DISTINCT ID FROM Client) cID 
       LEFT OUTER JOIN 
@@ -66,14 +61,11 @@ FROM (SELECT DISTINCT ID FROM Client) cID
     Client cH ON cID.ID = cH.ID AND cW.Metric = "Ht_cm" 
       LEFT OUTER JOIN 
     Client cA ON cID.ID = cA.ID AND cW.Metric = "Age_yr"
-{% endhighlight %}
 
 To:
 
-{% highlight sql %}
 SELECT c.ID, c.Ht_cm, c.Wt_kg, c.Age_yr
 FROM Client c
-{% endhighlight %}
 
 However, as most of these limitations except #4 (query) also exist even in MongoDB, they are just another side of no schema. And I can live with that at least.
 
