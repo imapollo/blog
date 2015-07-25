@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open-Falcon Alerting Module Research
+title: open-falcon Alerting Module Research
 ---
 
 Alerting is an important part in monitoring system. The well-known open-source monitoring systems like ganglia, nagios, zabbix cannot fit the requirements of flexibility I want to have on alerting module.
@@ -12,6 +12,8 @@ Alerting is an important part in monitoring system. The well-known open-source m
 2. Configurable threadhold based on multiple items
 3. Time based alerting strategies per user
 4. Alert Correlation, especially during alert flooding
+
+### open-falcon
 
 [open-falcon](https://github.com/xiaomi/open-falcon) is an open-source monitoring and alerting system written in Go language. It provides scalability on each sub-modules, including agent, receiver, judge (to send alarm or not), alarm,  sender, dashboard etc. open-falcon mainly uses redis as queue and cache to build the scalable system. Luckily, I found out open-falcon can fit some of these requirements easily.
 
