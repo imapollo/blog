@@ -3,8 +3,6 @@ layout: post
 title: Cattle Powering Rancher
 ---
 
-## Rancher
-
 [Rancher](http://rancher.com/) is an open source software platform that implements a purpose-built infrastructure for running Docker containers in production. As in production, there are requirements to create new requirements in infrastructure services such as networking, storage, load balancer, security, service discovery, and resource management.
 
 ## Cattle
