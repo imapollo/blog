@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl:
-url: "http://example.com" # the base hostname & protocol for your site
+url: "https://imapollo.github.io" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
@@ -28,7 +28,7 @@ theme:
   flickr:
   github: "imapollo"
   google_plus:
-  instagram: "imapollo"
+  instagram: "char87_"
   linkedin:  # Full URL
   pinterest: "imapollo"
   reddit:
